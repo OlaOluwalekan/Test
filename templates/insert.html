@@ -1,0 +1,8 @@
+{% extends "layout.html" %} {% block main %}
+<h1>Insert Page</h1>
+<form action="/insert" method="post">
+  <input type="text" name="username" id="username" />
+  <input type="text" name="password" id="password" />
+  <button type="submit">Insert</button>
+</form>
+{% endblock %}

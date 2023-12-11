@@ -1,0 +1,10 @@
+{% extends "layout.html" %} {% block main %}
+<h1>Home Page</h1>
+{% for user in users %}
+<div
+  style="display: flex; justify-content: center; align-items: center; gap: 30px"
+>
+  <h3>{{ user.username }}</h3>
+  <p>{{ user.password }}</p>
+</div>
+{% endfor %} {% endblock %}
